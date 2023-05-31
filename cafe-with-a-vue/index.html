@@ -9,16 +9,16 @@
     <title>Cafe with a Vue</title>
   </head>
   <body>
-    <div id="app">
+    <div id="app" class="app">
       <h1>{{ restaurantName }}</h1>
       <p class="description">
-        Bienvenue dans notre café la belle vue ! Nous sommes réputés pour notre
+        Bienvenue dans notre café {{ restaurantName }} ! Nous sommes réputés pour notre
         pain et nos merveilleuses pâtisseries. Faites vous plaisir dès le matin
         ou avec un goûter réconfortant. Mais attention, vous verrez qu'il est
         difficile de s'arrêter.
       </p>
       <footer class="footer">
-        <p>Copyright La belle vue 2020</p>
+        <p>Copyright {{ restaurantName }} 2020</p>
       </footer>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
